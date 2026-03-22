@@ -22,7 +22,7 @@ cask "maxlaunchpad" do
   uninstall quit: "com.awesomedog.maxlaunchpad",
             script: {
               executable: "osascript",
-              args: ["-e", 'tell application "System Events" to delete login item "MaxLaunchpad"'],
+              args: ["-e", 'tell application "System Events" to if exists login item "MaxLaunchpad" then delete login item "MaxLaunchpad"'],
               sudo: false,
             }
 
