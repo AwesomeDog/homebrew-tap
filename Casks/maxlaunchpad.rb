@@ -1,6 +1,6 @@
 cask "maxlaunchpad" do
-  version "1.0.6"
-  sha256 "b9ce869a03c8639a2fb76515465a78de28664ef9e637b8264dfdfe0c45b948fe"
+  version "1.0.9"
+  sha256 "920258aec213ade93328841fc166a53c85bde0589b9e8a7071ae26ce1a8e5896"
 
   url "https://github.com/AwesomeDog/maxlaunchpad/releases/download/v#{version}/MaxLaunchpad.dmg"
   name "MaxLaunchpad"
@@ -13,18 +13,9 @@ cask "maxlaunchpad" do
 
   postflight do
     system_command "/usr/bin/xattr", args: ["-cr", "/Applications/MaxLaunchpad.app"]
-
-    system_command "osascript", args: [
-      "-e", 'tell application "System Events" to make login item at end with properties {path:"/Applications/MaxLaunchpad.app", hidden:false}'
-    ]
   end
 
-  uninstall quit: "com.awesomedog.maxlaunchpad",
-            script: {
-              executable: "osascript",
-              args: ["-e", 'tell application "System Events" to if exists login item "MaxLaunchpad" then delete login item "MaxLaunchpad"'],
-              sudo: false,
-            }
+  uninstall quit: "com.awesomedog.maxlaunchpad"
 
   zap trash: [
     "~/Library/Preferences/com.awesomedog.maxlaunchpad.plist",
@@ -34,9 +25,8 @@ cask "maxlaunchpad" do
   ]
 
   caveats <<~EOS
-    MaxLaunchpad has been added to your login items.
-
-    To manage login items:
+    To have MaxLaunchpad start on Startup, open the app and enable
+    "Launch on Startup" in its settings, or manually add it via:
       System Settings → General → Login Items
   EOS
 end
