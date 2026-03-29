@@ -24,11 +24,16 @@ class Infrss < Formula
     bin.install Dir.glob("infrss-*").first => binary_name
   end
 
-  def post_install
-    system bin/"infrss", "--install"
+  # Homebrew's sandbox blocks writes to $HOME in post_install.
+  # The user must run the setup command manually after install.
+  def caveats
+    <<~EOS
+      To complete the setup (install Thunderbird extension + native messaging manifest), run:
+        infrss
+    EOS
   end
 
   test do
-    assert_match "infrss", shell_output("#{Dir.home}/.local/bin/infrss --version")
+    assert_match "infrss", shell_output("#{bin}/infrss --version")
   end
 end
