@@ -6,6 +6,7 @@ Personal Homebrew tap for [@AwesomeDog](https://github.com/AwesomeDog)'s project
 
 ```bash
 brew tap AwesomeDog/tap
+brew trust AwesomeDog/tap
 ```
 
 ## Available Casks
