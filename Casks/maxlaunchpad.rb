@@ -7,7 +7,7 @@ cask "maxlaunchpad" do
   desc "A simple, reliable launcher that makes your most-used applications instantly accessible from the keyboard"
   homepage "https://github.com/AwesomeDog/maxlaunchpad"
 
-  depends_on macos: :monterey"
+  depends_on macos: :monterey
 
   app "MaxLaunchpad.app"
 
