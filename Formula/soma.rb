@@ -1,9 +1,8 @@
 class Soma < Formula
   desc "Local knowledge-base search engine for natural-language and keyword search"
   homepage "https://github.com/AwesomeDog/soma"
-  url "https://github.com/AwesomeDog/soma/releases/download/v0.9.1/soma-mac-arm64"
-  version "0.9.1"
-  sha256 "4087a800ed2a4cbaf91e8c9ec3642c22eb5d700b0fb95d4727e73b8912e39ad8"
+  url "https://github.com/AwesomeDog/soma/releases/download/v0.9.2/soma-mac-arm64"
+  sha256 "eab8d5ab10891e8d9cc50df39dbb752c0c86c5f7c6d579a2f6325583b5940392"
   license "MIT"
 
   depends_on arch: :arm64
