@@ -1,20 +1,19 @@
 class Infrss < Formula
   desc "Infinite-scrolling RSS reader for Thunderbird"
   homepage "https://awesomedog.github.io/infinite-rss-reader/"
-  version "2.0.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/AwesomeDog/infinite-rss-reader/releases/download/v#{version}/infrss-macos-arm64"
-      sha256 "9a757090ea02592d70a912d89a3abd7a575fd2d1851759f27ba022747057eb23"
+      url "https://github.com/AwesomeDog/infinite-rss-reader/releases/download/v2.1.1/infrss-macos-arm64"
+      sha256 "6cb7bbb754ccd4734442fb3882ed933aa8349426318781c8e0df17b6528888df"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/AwesomeDog/infinite-rss-reader/releases/download/v#{version}/infrss-linux-amd64"
-      sha256 "2da0a7d5bac22a8c1f0f8d9bb0b687e6f3c3c0dd7156559128660af581655fc1"
+      url "https://github.com/AwesomeDog/infinite-rss-reader/releases/download/v2.1.1/infrss-linux-amd64"
+      sha256 "62eff215ebb616912c6d28d9cd035c39ccf014c55010bac427e3e94c00e87b6c"
     end
   end
 
@@ -34,6 +33,6 @@ class Infrss < Formula
   end
 
   test do
-    assert_match "infrss", shell_output("#{bin}/infrss --version")
+    assert_match "infrss v#{version}", shell_output("#{bin}/infrss --version")
   end
 end
