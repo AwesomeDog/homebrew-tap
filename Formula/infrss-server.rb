@@ -5,15 +5,15 @@ class InfrssServer < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/AwesomeDog/infinite-rss-reader/releases/download/v2.1.1/infrss-server-macos-arm64"
-      sha256 "dd8fa7253dbd70f507b98f1e89a24fa2d97f4059e831afc845f346f79b94ca0a"
+      url "https://github.com/AwesomeDog/infinite-rss-reader/releases/download/v2.1.2/infrss-server-macos-arm64"
+      sha256 "7dcf5f46a9c6706a78892c9fe2bdadd0d4ed4ce69f2111a65186399ba68a7469"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/AwesomeDog/infinite-rss-reader/releases/download/v2.1.1/infrss-server-linux-amd64"
-      sha256 "b034ae5229e2a7d547160b6a9343cab02d9cce4b22f4487ea4525af22a4f68b7"
+      url "https://github.com/AwesomeDog/infinite-rss-reader/releases/download/v2.1.2/infrss-server-linux-amd64"
+      sha256 "cf237c065e44db1de10970528677f2578adcb24d2753711ea5bc7fadcff34368"
     end
   end
 
