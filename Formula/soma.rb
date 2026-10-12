@@ -5,15 +5,15 @@ class Soma < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/AwesomeDog/soma/releases/download/v0.10.4/soma-mac-arm64"
-      sha256 "a3f98cd0f948437bd842c7c5b5985c61b7498c686802431cd42ec780d3e3abbd"
+      url "https://github.com/AwesomeDog/soma/releases/download/v0.10.5/soma-mac-arm64"
+      sha256 "b94eec114af5a71b65489a3f9de3420896cd871ede1c3e84c362e1e872b30485"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/AwesomeDog/soma/releases/download/v0.10.4/soma-linux-x64"
-      sha256 "838a9c4444835a6ff796ca46e349093ef0a316476fbee8fa13a7f93699cddb7f"
+      url "https://github.com/AwesomeDog/soma/releases/download/v0.10.5/soma-linux-x64"
+      sha256 "21f8ef2e2c9fe20a9899001cf4fde40f10687cf08307dfd69a66e1085eea80e6"
     end
   end
 
