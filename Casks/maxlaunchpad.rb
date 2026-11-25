@@ -11,8 +11,8 @@ cask "maxlaunchpad" do
 
   app "MaxLaunchpad.app"
 
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-cr", "/Applications/MaxLaunchpad.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-cr", "/Applications/MaxLaunchpad.app"]
   end
 
   uninstall quit: "com.awesomedog.maxlaunchpad"
