@@ -1,6 +1,6 @@
 cask "maxlaunchpad" do
-  version "1.1.1"
-  sha256 "01ca4c831447b8cf1b50dc2f19478acc85f05d5e305aa41841ae9724024dd8d5"
+  version "1.1.2"
+  sha256 "3cbb501af2709f86c32dd58159853a320cf9d6e7dfff67379c1d38c288190fff"
 
   url "https://github.com/AwesomeDog/maxlaunchpad/releases/download/v#{version}/MaxLaunchpad.dmg"
   name "MaxLaunchpad"
